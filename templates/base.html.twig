@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Branis AINOUZ{% endblock %}</title>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-3516288992943624",
+                enable_page_level_ads: true
+            });
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('assets/lib/bootstrap/css/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+            <link rel="stylesheet" href="{{ asset('assets/lib/font-awesome/css/font-awesome.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('assets/lib/animate/animate.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('assets/lib/ionicons/css/ionicons.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('assets/lib/owlcarousel/assets/owl.carousel.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('assets/lib/font-awesome/css/font-awesome.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('assets/lib/lightbox/css/lightbox.min.css') }}">
+        {% endblock %}
+    </head>
+    <body>
+
+        {% include 'partials/header.html.twig' %}
+
+        {% block body %}{% endblock %}
+
+
+        {% block javascripts %}
+
+
+            <script src="{{ asset('assets/lib/jquery/jquery.min.js') }}"></script>
+            <script src="{{ asset('assets/lib/jquery/jquery-migrate.min.js') }}"></script>
+            <script src="{{ asset('assets/lib/popper/popper.min.js') }}"></script>
+            <script src="{{ asset('assets/lib/bootstrap/js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('assets/lib/easing/easing.min.js') }}"></script>
+            <script src="{{ asset('assets/lib/counterup/jquery.waypoints.min.js') }}"></script>
+            <script src="{{ asset('assets/lib/counterup/jquery.counterup.js') }}"></script>
+            <script src="{{ asset('assets/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+            <script src="{{ asset('assets/lib/lightbox/js/lightbox.min.js') }}"></script>
+            <script src="{{ asset('assets/lib/typed/typed.min.js') }}"></script>
+            <script src="{{ asset('assets/js/main.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
